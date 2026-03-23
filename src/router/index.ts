@@ -1,6 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
-import { base } from '@/config'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -42,7 +41,8 @@ const routes: RouteRecordRaw[] = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(base),
+  // 不传 base：使用当前 pathname（根站点 / 或项目页 /repo/ 都正确），避免与 Vite base 不一致导致白屏
+  history: createWebHashHistory(),
   routes,
 })
 

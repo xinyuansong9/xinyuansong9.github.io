@@ -31,8 +31,8 @@ jobs:
 
       - name: Build
         env:
-          # For username.github.io root site
-          VITE_BASE: ''
+          # username.github.io 用户站点在域名根路径，显式写 '/'（勿用子路径）
+          VITE_BASE: '/'
         run: npm run build
 
       - name: Upload artifact
