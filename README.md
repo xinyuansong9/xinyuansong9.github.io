@@ -1,6 +1,7 @@
+
 # 个人学术网站
 
-基于 **Vue 3 + Vite + TypeScript + Vue Router** 的单页学术主页，支持 GitHub Pages 自动部署，并为后续升级预留扩展空间。
+基于 **Vue 3 + Vite + TypeScript + Vue Router** 的学术主页，支持 GitHub Pages 自动部署，并为后续升级预留扩展空间。
 
 ## 本地开发
 
@@ -51,3 +52,7 @@ npm run preview
 ## 技术栈
 
 - Vue 3、Vue Router 4、TypeScript、Vite 5
+
+# xinyuansong9.github.io
+Academic website of Xinyuan Song
+cb5b20273de4f426c03b90b5952324ae8ac50093
