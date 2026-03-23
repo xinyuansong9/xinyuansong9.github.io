@@ -9,7 +9,7 @@ export default defineConfig({
       '@': resolve(__dirname, 'src'),
     },
   },
-  // 部署到 GitHub Pages：子路径由 workflow 注入 VITE_BASE（如 /MyWeb/），本地默认 /
+  // GitHub Actions 里设置 VITE_BASE：用户站点 username.github.io 用 ''（构建时得到 base '/'）；项目站点用 '/RepoName/'
   base: process.env.VITE_BASE || '/',
   build: {
     outDir: 'dist',
